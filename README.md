@@ -17,8 +17,8 @@ Utilizzo
 * Installa con [Composer](https://getcomposer.org/doc/00-intro.md):
 
 ```bash
-git clone https://github.com/italia/spid-simplesamlphp.git
-cd spid-simplesamlphp
+git clone https://github.com/italia/spid-sp-simplesamlphp.git
+cd spid-sp-simplesamlphp
 composer install
 ```
 
@@ -53,7 +53,7 @@ I files generati da questo comando devono essere configurati nel file config/aut
 
 Una volta copiati editarli in modo da personalizzare il proprio server e i propri servizi
 
-* Configurare il proprio web server in modo da far puntare https://dominio.example.com/simplesaml alla cartella in cui è stato clonato il progetto italia/spid-simplesamlphp
+* Configurare il proprio web server in modo da far puntare https://dominio.example.com/simplesaml alla cartella in cui è stato clonato il progetto italia/spid-sp-simplesamlphp
 
 
 * Per generare il file con i metadata del proprio servizio andare su:
@@ -95,4 +95,3 @@ Credits
 -------
 
 Per la collaborazione si ringrazia il Comune di Firenze
-
