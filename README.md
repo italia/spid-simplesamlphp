@@ -44,8 +44,8 @@ I files generati da questo comando devono essere configurati nel file config/aut
 ```
     'nomeservizio-sp' => array(
         'saml:SP',
-        'privatekey' => 'saml.pem',
-        'certificate' => 'saml.crt',
+        'privatekey' => 'spid-sp.pem',
+        'certificate' => 'spid-sp.crt',
         // The entity ID of this SP.
         // Can be NULL/unset, in which case an entity ID is generated based on the metadata URL.
         'entityID' => null,
@@ -53,7 +53,7 @@ I files generati da questo comando devono essere configurati nel file config/aut
 
 Una volta copiati editarli in modo da personalizzare il proprio server e i propri servizi
 
-* Configurare il proprio web server in modo da far puntare https://dominio.example.com/simplesaml alla cartella in cui è stato clonato il progetto italia/spid-sp-simplesamlphp
+* Configurare il proprio web server in modo da far puntare https://dominio.example.com/simplesaml alla cartella `www` del progetto clonato italia/spid-sp-simplesamlphp
 
 
 * Per generare il file con i metadata del proprio servizio andare su:
