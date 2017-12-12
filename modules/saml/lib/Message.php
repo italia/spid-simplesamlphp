@@ -472,7 +472,7 @@ class sspmod_saml_Message
         $ar->setProtocolBinding($protbind);
         //$ar->setIssuer($spMetadata->getString('entityid'));
         $issuer = new \SAML2\XML\saml\Issuer();
-        $issuer->Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity ";
+        $issuer->Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity";
         $issuer->NameQualifier=$spMetadata->getString('entityid');
         $issuer->value=$spMetadata->getString('entityid');
         $ar->setIssuer($issuer);
@@ -511,9 +511,9 @@ class sspmod_saml_Message
         $lr = new \SAML2\LogoutRequest();
         //$lr->setIssuer($srcMetadata->getString('entityid'));
         $issuer = new \SAML2\XML\saml\Issuer();
-        $issuer->Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity ";
-        $issuer->NameQualifier=$spMetadata->getString('entityid');
-        $issuer->value=$spMetadata->getString('entityid');
+        $issuer->Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity";
+        $issuer->NameQualifier=$srcMetadata->getString('entityid');
+        $issuer->value=$srcMetadata->getString('entityid');
         $lr->setIssuer($issuer);
 
         self::addRedirectSign($srcMetadata, $dstMetadata, $lr);
