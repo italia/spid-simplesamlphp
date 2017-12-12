@@ -472,7 +472,7 @@ class sspmod_saml_Message
         $ar->setProtocolBinding($protbind);
         //$ar->setIssuer($spMetadata->getString('entityid'));
         $issuer = new \SAML2\XML\saml\Issuer();
-        $issuer->Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity ";
+        $issuer->Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity";
         $issuer->NameQualifier=$spMetadata->getString('entityid');
         $issuer->value=$spMetadata->getString('entityid');
         $ar->setIssuer($issuer);
